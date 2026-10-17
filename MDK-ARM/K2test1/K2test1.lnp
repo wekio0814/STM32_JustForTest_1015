@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"k2test1\startup_stm32f103xb.o"
+"k2test1\main.o"
+"k2test1\stm32f1xx_it.o"
+"k2test1\stm32f1xx_hal_msp.o"
+"k2test1\stm32f1xx_hal_gpio_ex.o"
+"k2test1\stm32f1xx_hal.o"
+"k2test1\stm32f1xx_hal_rcc.o"
+"k2test1\stm32f1xx_hal_rcc_ex.o"
+"k2test1\stm32f1xx_hal_gpio.o"
+"k2test1\stm32f1xx_hal_dma.o"
+"k2test1\stm32f1xx_hal_cortex.o"
+"k2test1\stm32f1xx_hal_pwr.o"
+"k2test1\stm32f1xx_hal_flash.o"
+"k2test1\stm32f1xx_hal_flash_ex.o"
+"k2test1\stm32f1xx_hal_exti.o"
+"k2test1\system_stm32f1xx.o"
+--strict --scatter "K2test1\K2test1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "K2test1.map" -o K2test1\K2test1.axf
